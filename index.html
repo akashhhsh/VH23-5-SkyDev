@@ -67,28 +67,7 @@
             synth.speak(pronounceText)
         })
 
-        const url = 'https://sa-translate.p.rapidapi.com/translate/text';
-        const options = {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json',
-                'X-RapidAPI-Key': '81f09fa6eemsh8ea827c3456e161p1464dcjsn178a3dc40216',
-                'X-RapidAPI-Host': 'sa-translate.p.rapidapi.com'
-            },
-            body: {
-                text: 'Here is some text that I want to translate from English to Portuguese',
-                targetLanguage: 'hi'
-            }
-        };
-
-        try {
-            const response = await fetch(url, options);
-            const result = await response.text();
-            console.log(result);
-        } catch (error) {
-            console.error(error);
-        }
-
+   
     </script>
 
 
